@@ -3,7 +3,6 @@ import * as bcrypt from 'bcryptjs'
 import { User } from '../entity/User'
 
 interface UserArgs {
-    name: string;
     email: string;
     password: string;
 }

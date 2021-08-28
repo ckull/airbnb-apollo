@@ -1,5 +1,5 @@
 {
-  "name": "cliecnt",
+  "name": "@app/client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -25,7 +25,8 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1",
-    "yup": "^0.32.9"
+    "yup": "^0.32.9",
+    "@app/common": "1.0.0"
   },
   "scripts": {
     "start": "craco start",

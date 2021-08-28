@@ -1,17 +1,17 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-
+import * as yup from 'yup'
+import { schema } from '@app/common'
 const RegisterForm = (props: any) => {
     interface FormValues {
         email: string;
         password: string;
     }
 
-  const schema = yup.object().shape({
-    email: yup.string().email().required(),
-    password: yup.string().required().min(6),
-  });
+    const schema = yup.object().shape({
+      email: yup.string().email().required(),
+      password: yup.string().required().min(6),
+    });
 
   const {
     register,
