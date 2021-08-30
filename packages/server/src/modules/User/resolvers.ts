@@ -1,11 +1,7 @@
 
-import * as bcrypt from 'bcryptjs'
-import { User } from '../entity/User'
+import { User } from '../../entity/User'
 
-interface UserArgs {
-    email: string;
-    password: string;
-}
+import { UserArgs } from './interface'
 
 const resolvers = {
   Query: {
@@ -13,19 +9,16 @@ const resolvers = {
         return await User.find()
     },
     user: async (parent: any, args: UserArgs) => {
-      const { name } = args
-        return await User.findOne({ where: { name }})
+      return
     }
   },
   Mutation: {
     addUser: async (parent: any, args: UserArgs)=> {
-      let { email, password, name} = args
+      let { email, password } = args
       try {
-        const hashedPassword = await bcrypt.hash(password, 10) 
         const user = User.create({
           email, 
-          password: hashedPassword,
-          name
+          password
         })
         await User.save(user)
         return true

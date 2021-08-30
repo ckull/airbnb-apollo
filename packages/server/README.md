@@ -1,4 +1,4 @@
-# Apollo-Ts-Boilerplate
+# Apollo-Ts-Boilerplate [WIP]
 
 ## Description
 Apollo server with typeORM and typescript boilerplate

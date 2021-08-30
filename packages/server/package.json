@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@app/common": "1.0.0",
     "@types/bcryptjs": "^2.4.2",
     "apollo-server": "^3.1.2",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
     "graphql": "^15.5.1",
     "graphql-tools": "^8.1.0",
     "lodash.merge": "^4.6.2",
@@ -23,6 +25,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/lodash.merge": "^4.6.6",
     "@types/node": "^16.7.1",
     "@types/uuid": "^8.3.1",
     "ts-node": "^10.2.1",
